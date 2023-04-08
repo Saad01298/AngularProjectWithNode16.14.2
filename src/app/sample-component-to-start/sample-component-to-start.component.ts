@@ -16,7 +16,7 @@ export class SampleComponentToStartComponent implements OnInit {
     
   }
 
-  calledthroughButton() {
+  async calledthroughButton() {
     if(this.flag == 0) {
       console.log(this.flag);
       this.flag = 1;
@@ -25,7 +25,7 @@ export class SampleComponentToStartComponent implements OnInit {
     else if (this.flag == 1) {
       console.log(this.flag);
       this.flag = 2;
-      this.name = this.name + this.serviceVar.callApi();
+      this.name = this.name + await this.serviceVar.callApi();
     }
     else {
       console.log(this.flag);

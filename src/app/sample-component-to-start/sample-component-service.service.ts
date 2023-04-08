@@ -11,18 +11,16 @@ export class SampleComponentServiceService {
   }
 
   callApi() : any {
-    fetch("http://localhost:8080/sampleApiForAngular")
+    return fetch("http://localhost:8080/sampleApiForAngular")
 		.then(response => response.json())
 		.then(data=>{
-        console.log(data['name']);
         this.apiReturnedValue = data['name'];
+        return this.apiReturnedValue;
       }
     )
     .catch(error=>{
         console.log(error);
       }
     );
-
-    return this.apiReturnedValue;
   }
 }
