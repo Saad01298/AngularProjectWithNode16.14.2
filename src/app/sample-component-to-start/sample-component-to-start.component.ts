@@ -18,14 +18,20 @@ export class SampleComponentToStartComponent implements OnInit {
 
   calledthroughButton() {
     if(this.flag == 0) {
+      console.log(this.flag);
       this.flag = 1;
       this.name = this.serviceVar.sampleMethod(" Ali");
     }
+    else if (this.flag == 1) {
+      console.log(this.flag);
+      this.flag = 2;
+      this.name = this.name + this.serviceVar.callApi();
+    }
     else {
+      console.log(this.flag);
       this.flag = 0;
       this.name = this.serviceVar.sampleMethod("");
     }
-
   }
 
 }
