@@ -27,10 +27,16 @@ export class SampleComponentToStartComponent implements OnInit {
       this.flag = 2;
       this.name = this.name + await this.serviceVar.callApi();
     }
-    else {
+    else if (this.flag == 2){
+      console.log(this.flag);
+      this.flag = 3;
+      this.name = this.serviceVar.sampleMethod("");
+    } else {
       console.log(this.flag);
       this.flag = 0;
-      this.name = this.serviceVar.sampleMethod("");
+      this.serviceVar.callAPIObservable().subscribe(data=>{
+        this.name = this.name + data['name'];
+      });
     }
   }
 
