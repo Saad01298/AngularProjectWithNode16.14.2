@@ -1,46 +1,43 @@
-<p>sample-component-to-start works!!</p>
-<h2>{{name}}</h2>
-<button (click)="calledthroughButton()">Click</button>
-
-<br>
-<br>
-<hr>
-
-<div class="outermost-div">
-    <div class="first-inner-div">
-        <div></div>
+<div class="outermost-section">
+    <div class="upper-section">
+        <nav>
+            <h2 class="main-heading">INCEPTION KIOSK~</h2>
+        </nav>
     </div>
-    <div class="second-inner-div">
-        <div></div>
+    <div class="lower-section">
+        <div class="input-container">
+            <input type="text" class="input-field" placeholder="Search...">
+        </div>
+        
+        <div class="radio-container">
+            <label class="radio-label">
+                <input [(ngModel)]="selectedValue" style="cursor: pointer;" type="radio" name="option" value="otu">
+                <span style="color:#4d4a4a"><strong>Optum</strong></span>
+                <span style="color:#f7720c"><strong>Tech</strong></span>
+            </label>
+            <label class="radio-label">
+                <input [(ngModel)]="selectedValue" style="cursor: pointer;" type="radio" name="option" value="gpt">
+                <span style="color:#00b539"><strong>Chat</strong></span>
+                <span style="color:#279107fc"><strong>GPT</strong></span>
+            </label>
+            <label class="radio-label">
+                <input [(ngModel)]="selectedValue" style="cursor: pointer;" type="radio" name="option" value="google">
+                <span style="color:#258ddcfc"><strong>G</strong></span>
+                <span style="color:#f55307fc"><strong>o</strong></span>
+                <span style="color:#f0af0afc"><strong>o</strong></span>
+                <span style="color:#258ddcfc"><strong>g</strong></span>
+                <span style="color:#35bf0bfc"><strong>l</strong></span>
+                <span style="color:#f55307fc"><strong>e</strong></span>
+            </label>
+            <label class="radio-label">
+                <input [(ngModel)]="selectedValue" style="cursor: pointer;" type="radio" name="option" value="all">
+                <span style="color:#5e6063"><strong>All</strong></span>
+            </label>
+        </div>
+
+        <div class="upload-document">
+            <button class="search-button" [routerLink]="['search']" [queryParams]="{selectedValue}">Search</button>
+            <button class="upload-document-button">Upload a document</button>
+        </div>
     </div>
 </div>
-
-
-<br>
-<br>
-<hr>
-
-<h1>Heading</h1>
-<h2>Subheading</h2>
-<table border="1">
-<tr>
-<th>Name</th>
-<th>Age</th>
-<th>Gender</th>
-</tr>
-<tr>
-<td>Alice</td>
-<td>25</td>
-<td>F</td>
-</tr>
-<tr>
-<td>Bob</td>
-<td>30</td>
-<td>M</td>
-</tr>
-<tr>
-<td>Charlie</td>
-<td>28</td>
-<td>M</td>
-</tr>
-</table>

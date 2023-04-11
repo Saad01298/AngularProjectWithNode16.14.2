@@ -1,0 +1,45 @@
+<div class="outermost-section">
+    <div class="upper-section">
+        <nav>
+            <h2 class="main-heading">INCEPTION KIOSK~</h2>
+            <div class="input-container">
+                <input type="text" class="input-field" placeholder="Search...">
+            </div>
+        </nav>
+    </div>
+    <div class="lower-section">
+        <ng-container *ngIf="OTU">
+            <div [ngClass]="{'classSingle': oneActive, 'classAllActive': allActive}">
+                <h3>
+                    <span style="color:#4d4a4a"><strong>Optum</strong></span>
+                    <span style="color:#f7720c"><strong>Tech</strong></span>
+                </h3>
+                <div></div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="GPT">
+            <div [ngClass]="{'classSingle': oneActive, 'classAllActive': allActive}">
+                <h3>
+                    <span style="color:#00b539"><strong>Chat</strong></span>
+                    <span style="color:#279107fc"><strong>GPT</strong></span>
+                </h3>
+                <div></div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="Google">
+            <div [ngClass]="{'classSingle': oneActive, 'classAllActive': allActive}">
+                <h3>
+                    <span style="color:#258ddcfc"><strong>G</strong></span>
+                    <span style="color:#f55307fc"><strong>o</strong></span>
+                    <span style="color:#f0af0afc"><strong>o</strong></span>
+                    <span style="color:#258ddcfc"><strong>g</strong></span>
+                    <span style="color:#35bf0bfc"><strong>l</strong></span>
+                    <span style="color:#f55307fc"><strong>e</strong></span>
+                </h3>
+                <div></div>
+            </div>
+        </ng-container>
+    </div>
+</div>

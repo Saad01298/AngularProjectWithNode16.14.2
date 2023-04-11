@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
+import { SampleServiceService } from '../app.service';
 import { SampleComponentServiceService } from './sample-component-service.service';
 
 @Component({
@@ -10,10 +12,11 @@ export class SampleComponentToStartComponent implements OnInit {
 
   name: String = "Saad";
   flag = 0;
+  selectedValue = "all";
+
   constructor(private serviceVar: SampleComponentServiceService) {}
   
   ngOnInit(): void {
-    
   }
 
   async calledthroughButton() {
