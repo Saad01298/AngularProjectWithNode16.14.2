@@ -34,33 +34,8 @@ nav{
 
 .lower-section {
     display: flex;
-    justify-content: space-between;
     padding: 13px 5%;
     height: 100%;
-}
-
-.classAllActive {
-    flex-basis: 30%;
-    position: sticky;
-    top: 70px;
-    align-self: flex-start;
-    justify-content: space-between;
-    background: rgb(242, 244, 249);
-    align-items: center;
-    text-align: center;
-    height: 455px;  /*100%; */
-}
-
-.classSingle {
-    flex-basis: 100%;
-    position: sticky;
-    top: 70px;
-    align-self: flex-start;
-    justify-content: space-between;
-    background: rgb(242, 244, 249);
-    align-items: center;
-    text-align: center;
-    height: 455px;  /*100%; */
 }
 
 .homeLinkClass {

@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SampleComponentToStartComponent } from './sample-component-to-start/sample-component-to-start.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { UploadFileComponent } from './upload-file/upload-file.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SampleComponentToStartComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    UploadFileComponent
   ],
   imports: [
     BrowserModule,
