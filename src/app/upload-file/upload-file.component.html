@@ -10,8 +10,8 @@
     </div>
     <div class="lower-section">
         <div class="dragDropUpload-div">
-            
-            <div><p class="dragDropParagraph-div">Drag and drop or <a href="#">browse</a> your file</p></div>
+            <input style="display: none;" type="file" class="file-input" onchange="console.log(event.target.files)" #fileUpload>
+            <div><p class="dragDropParagraph-div">Drag and drop or <a style="cursor: pointer; text-decoration: underline; color:rgba(6, 94, 225, 0.594)" (click)="fileUpload.click()">browse</a> your file</p></div>
         </div>
         <div class="dropdown-div">
             <select class="select-dropdown">
