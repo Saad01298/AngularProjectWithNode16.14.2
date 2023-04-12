@@ -32,13 +32,55 @@ nav{
     border-width: 0.3px;
 }
 
-.lower-section {
-    display: flex;
-    padding: 13px 5%;
-    height: 100%;
-}
-
 .homeLinkClass {
     margin-left: 10px;
     color: white;
 }
+
+.lower-section {
+    display: flex;
+    padding: 13px 5%;
+    height: 100%;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 450px;
+}
+
+.dragDropUpload-div {
+    background: #f5f7fa;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;;
+}
+
+.dropdown-div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.select-dropdown {
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+}
+
+option {
+    width: 100px;
+}
+
+.submitButton {
+    height: 35px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 15px;
+}
+
