@@ -10,8 +10,25 @@
     </div>
     <div class="lower-section">
         <div class="dragDropUpload-div">
-            <input style="display: none;" type="file" class="file-input" onchange="console.log(event.target.files)" #fileUpload>
-            <div><p class="dragDropParagraph-div">Drag and drop or <a style="cursor: pointer; text-decoration: underline; color:rgba(6, 94, 225, 0.594)" (click)="fileUpload.click()">browse</a> your file</p></div>
+            <div class="dragDrop-internal-box">
+                <input style="display: none;" type="file" class="file-input" onchange="console.log(event.target.files)" #fileUpload>
+                <div class="folder">
+                    <div class="icon"></div>
+                </div>
+                <div>
+                    <p class="dragDropParagraph-div">Drag and drop files to upload</p>
+                </div>
+                <div class="dragDrop-or-div">
+                    <div><hr></div>
+                    <div><p style="margin-left: 6px; margin-right: 6px;">Or</p></div>
+                    <div><hr></div>
+                </div>
+                <div>
+                    <button class="browse-button">
+                        <a (click)="fileUpload.click()">Browse Files</a>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="dropdown-div">
             <select class="select-dropdown">
