@@ -51,8 +51,8 @@ nav{
 
 .dragDropUpload-div {
     background: #f5f7fa;
-    width: 450px;
-    height: 270px;
+    width: 470px;
+    height: 350px;
     display: flex;
     align-self: center;
     align-items: center;
@@ -64,8 +64,8 @@ nav{
 
 .dragDrop-internal-box {
     background: #e3eaf5;
-    width: 400px;
-    height: 230px;
+    width: 425px;
+    height: 310px;
     display: flex;
     flex-direction: column;
     align-self: center;
